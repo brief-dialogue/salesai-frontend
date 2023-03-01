@@ -15,16 +15,28 @@ import {
 import { toast } from 'react-toastify';
 import Link from 'next/link';
 import LoginSignupModal from './loginSignupModal';
+import ProfileNavItem from './profileNavItem';
+import useLoginStore from "../hooks/useLoginStore"
 
 
 
-
-
-export default function App() {
+export default function App({loginStatus,setLoginStatus,user,setUser}) {
 
     const [showNav, setShowNav] = useState(false);
     const [showModal, setShowModal] = useState(false);
+    const [showLogoutSpinner, setShowLogoutSpinner] = useState(false);
+    // const [isLogIn,setIsLogIn] = useState(false);
     const toggleModal = () => setShowModal(!showModal);
+
+
+    // on first render
+    // useEffect(()=>{
+
+    //     let access_token = localStorage.getItem("ACCESS_TOKEN")
+
+    //     if(access_token) setIsLogIn(true);
+
+    // },[])
 
     return (
 
@@ -59,7 +71,8 @@ export default function App() {
                         </MDBNavbarNav>
                         <MDBNavbarNav right fullWidth={false}>
                             <MDBNavbarItem>
-                                <MDBBtn onClick={toggleModal}>Login</MDBBtn>
+                                {(user["isLogIn"])?(<ProfileNavItem loginStatus={loginStatus} setLoginStatus={setLoginStatus} user = {user} setUser = {setUser} />):(<MDBBtn onClick={toggleModal}>Login</MDBBtn>)}
+                                
                             </MDBNavbarItem>
                         </MDBNavbarNav>
                     </MDBCollapse>
@@ -68,7 +81,7 @@ export default function App() {
             </MDBNavbar>
 
             {/* Login Modal */}
-            <LoginSignupModal showModal={showModal} setShowModal={setShowModal} toggleModal={toggleModal} />
+            <LoginSignupModal loginStatus={loginStatus} setLoginStatus={setLoginStatus} user={user} setUser={setUser} showModal={showModal} setShowModal={setShowModal} toggleModal={toggleModal} />
 
         </>
 

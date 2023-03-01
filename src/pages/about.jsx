@@ -1,9 +1,10 @@
-export default function About(){
+export default function About({loginStatus,setLoginStatus,user,setUser}){
+
 
     return(
 
         <>
-         <p> This is about page</p>
+         {(user['isLogIn'])?(<p>Hello {user['email']}</p>):<p>Not Logged in </p>}
         </>
     )
 }

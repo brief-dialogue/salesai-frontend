@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { BASE_STRAPI_URL } from "../environment"
 
-export default function LoginSignupModal({ showModal, setShowModal, toggleModal }) {
+
+export default function LoginSignupModal({loginStatus,setLoginStatus,user,setUser, showModal, setShowModal, toggleModal }) {
 
     const [isBrowser, setIsBrowser] = useState(false); // use to show if browser is fully loaded
     const [showLoginView, setShowLoginView] = useState(true);
@@ -11,6 +12,7 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
     const [showRegisterSpinner, setShowRegisterSpinner] = useState(false);
     const [loginError, setLoginError] = useState("");
     const [registerError, setRegisterError] = useState("");
+    
 
 
 
@@ -65,10 +67,17 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
 
                     // save to localstorage
                     setLoginError("");
-                    toast.success("Successfuly Logged In")
+                    // setUser({"token":result.jwt,"email":result.user.email,"id":result.user.id,"isLogIn":true})
                     localStorage.setItem("ACCESS_TOKEN", result.jwt);
                     localStorage.setItem("USER_ID", result.user.id);
                     localStorage.setItem("EMAIL", result.user.email);
+                    toast.success("Successfuly Logged In");
+                    setLoginStatus(!loginStatus);
+                    setFormValue({
+                        "email": "",
+                        "password": ""
+                    });
+                    setShowModal(false);
 
                 }
 
@@ -119,10 +128,17 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
 
                     // save to localstorage
                     setRegisterError("");
-                    toast.success("Successfuly Registered");
                     localStorage.setItem("ACCESS_TOKEN", result.jwt);
                     localStorage.setItem("USER_ID", result.user.id);
                     localStorage.setItem("EMAIL", result.user.email);
+                    
+                    toast.success("Successfuly Registered");
+                    setLoginStatus(!loginStatus);
+                    setFormValue({
+                        "email": "",
+                        "password": ""
+                    });
+                    setShowModal(false);
 
                 }
 
@@ -139,6 +155,20 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
 
     }
 
+    // function onModalHide(){
+
+    //     console.log("called hide");
+    //     console.log(formValue);
+    //     setFormValue({
+
+    //         "email": "",
+    //         "password": ""
+    //     })
+    //     console.log(formValue);
+
+    // }
+
+
     const toastTest = () => { toast(document.cookie) }
 
     function loginTest() {
@@ -147,7 +177,9 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
 
     }
 
+    
 
+    
     // default modalBody
     let modalBody = (<MDBSpinner grow color='primary'><span className='visually-hidden'>Loading...</span></MDBSpinner>);
 
@@ -157,8 +189,8 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
 
             <form>
 
-                <MDBInput className='mb-4' onChange={onFormInputChange} type='email' id='form3Example3' name="email" label='Email address' required />
-                <MDBInput className='mb-4' onChange={onFormInputChange} type='password' id='form3Example4' name="password" label='Password' required />
+                <MDBInput className='mb-4' onChange={onFormInputChange} value={formValue['email']} type='email' id='form3Example3' name="email" label='Email address' required />
+                <MDBInput className='mb-4' onChange={onFormInputChange} value={formValue['password']} type='password' id='form3Example4' name="password" label='Password' required />
 
                 <p className="error" style={{ display: (loginError == "") ? 'none' : 'block' }}>{loginError}</p>
                 <MDBBtn type='button' className='mb-4' onClick={handleLogin} block>
@@ -200,8 +232,8 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
 
             <form>
 
-                <MDBInput className='mb-4' onChange={onFormInputChange} type='email' id='form3Example3' name="email" label='Email address' required />
-                <MDBInput className='mb-4' onChange={onFormInputChange} type='password' id='form3Example4' name="password" label='Password' required />
+                <MDBInput className='mb-4' onChange={onFormInputChange} value={formValue['email']} type='email' id='form3Example3' name="email" label='Email address' required />
+                <MDBInput className='mb-4' onChange={onFormInputChange} value={formValue['password']} type='password' id='form3Example4' name="password" label='Password' required />
 
 
                 <p className="error" style={{ display: (registerError == "") ? 'none' : 'block' }}>{registerError}</p>
@@ -262,6 +294,6 @@ export default function LoginSignupModal({ showModal, setShowModal, toggleModal 
                 </MDBModalFooter>
             </MDBModalContent>
         </MDBModalDialog>
-    </MDBModal>) : (<p>Modal Not Working</p>)
+    </MDBModal>) : (<p>You are a failure</p>)
 
 }

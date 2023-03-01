@@ -1,7 +1,31 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Head from "next/head";
-export default function Layout({ children }) {
+import { useEffect, useState } from "react";
+export default function Layout({ loginStatus,setLoginStatus,user,setUser,children }) {
+
+
+    // const [user,setUser] = useState({"token":"","email":"","id":"","isLogIn":false});
+    // const [loginStatus,setLoginStatus] = useState(false);
+
+    // useEffect(()=>{
+
+    //     let access_token = localStorage.getItem("ACCESS_TOKEN")
+    //     let user_email = localStorage.getItem("EMAIL")
+    //     let user_id = localStorage.getItem("USER_ID")
+        
+    //     if(access_token && user_email && user_id){
+
+    //         setUser({"token":access_token,"email":user_email,"id":user_id,"isLogIn":true})
+    //     }
+    //     else{
+
+    //         setUser({"token":"","email":"","id":"","isLogIn":false})
+    //     }
+
+    //     console.log(user);
+
+    // },[loginStatus])
 
     return (
 
@@ -12,7 +36,7 @@ export default function Layout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            <Navbar loginStatus={loginStatus} setLoginStatus={setLoginStatus} user={user} setUser={setUser}/>
             <main>{children}</main>
             <Footer />
         </>
