@@ -16,6 +16,8 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "gridjs": "^6.0.6",
+    "gridjs-react": "^6.0.1",
     "mdb-react-ui-kit": "^5.1.0",
     "next": "13.1.6",
     "react": "18.2.0",

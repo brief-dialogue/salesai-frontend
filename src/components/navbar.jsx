@@ -20,8 +20,10 @@ import useLoginStore from "../hooks/useLoginStore"
 
 
 
-export default function App({loginStatus,setLoginStatus,user,setUser}) {
+export default function App({ loginStatus, setLoginStatus, user, setUser }) {
 
+
+    const navItemList = [["Home","/"],["Onboarding", "/onboarding"], ["Chat Analyzer", "/chatAnalyzer"], ["Practice", "/practice"], ["Manage Clients", "/manageClients"], ["Resources", "/resources"], ["Learn", "/learn"], ["Personal Analytics", "/personalAnalytics"]]
     const [showNav, setShowNav] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [showLogoutSpinner, setShowLogoutSpinner] = useState(false);
@@ -53,12 +55,18 @@ export default function App({loginStatus,setLoginStatus,user,setUser}) {
                         <MDBIcon icon='bars' fas />
                     </MDBNavbarToggler>
                     <MDBCollapse navbar show={showNav}>
-                        <MDBNavbarNav>
-                            <MDBNavbarItem>
+                        <MDBNavbarNav >
+                            {navItemList.map((item) =>
+
+                                (<MDBNavbarItem key={item[1]}>
+                                    <Link href={item[1]} className='nav-link'>{item[0]}</Link>
+                                </MDBNavbarItem>)
+                            )}
+                            {/* <MDBNavbarItem>
                                 <Link href='/' className='nav-link'> Home</Link>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
-                                <Link href="/about" className='nav-link'>About</Link>
+                                <Link href="/clients" className='nav-link'>About</Link>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
                                 <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
@@ -67,12 +75,12 @@ export default function App({loginStatus,setLoginStatus,user,setUser}) {
                                 <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
                                     Disabled
                                 </MDBNavbarLink>
-                            </MDBNavbarItem>
+                            </MDBNavbarItem> */}
                         </MDBNavbarNav>
                         <MDBNavbarNav right fullWidth={false}>
                             <MDBNavbarItem>
-                                {(user["isLogIn"])?(<ProfileNavItem loginStatus={loginStatus} setLoginStatus={setLoginStatus} user = {user} setUser = {setUser} />):(<MDBBtn onClick={toggleModal}>Login</MDBBtn>)}
-                                
+                                {(user["isLogIn"]) ? (<ProfileNavItem loginStatus={loginStatus} setLoginStatus={setLoginStatus} user={user} setUser={setUser} />) : (<MDBBtn onClick={toggleModal}>Login</MDBBtn>)}
+
                             </MDBNavbarItem>
                         </MDBNavbarNav>
                     </MDBCollapse>
