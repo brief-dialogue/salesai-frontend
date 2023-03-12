@@ -1,0 +1,237 @@
+{
+    "chat_id": "employeeID3a94f155-0b21-4e87-b28f-a0d960be9218",
+    "date": "04/03/23",
+    "client": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+    "employee": "employeeID",
+    "messages": [
+        {
+            "mid": 0,
+            "timestamp": "3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "What is no contact deilvery?",
+            "emotion": "others",
+            "sentiment": "NEU",
+            "isQuestion": true,
+            "question": " What is No-Contact delivery?",
+            "expcted_ans": "Amazon is focused on the health and safety of our customers and employees. Based on regional regulations and social distancing requirements; there is a change to the way we’re delivering your items. To adhere to the contactless or no-contact delivery, the delivery associate will leave your order at your doorstep and maintain a 2-meter distance.Learn more about what we are doing to ensure the safety of our employees, associates, delivery and transportation partners here.",
+            "ans": "The wellbeing and safety of both our clients and staff are top priorities at Amazon. There is a change in how we are delivering your things due to local laws and standards for social distance. The delivery colleague will leave your order at your doorstep and keep a 2-meter distance in order to comply to the contactless or no-contact delivery. Find out more about our efforts to guarantee the safety of our staff members, associates, delivery personnel, and transportation partners here.",
+            "ans_similarity": "0.92921436"
+        },
+        {
+            "mid": 1,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 2,
+            "timestamp": " \n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 3,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "employeeID",
+            "text": "The wellbeing and safety of both our clients and staff are top priorities at Amazon. There is a change in how we are delivering your things due to local laws and standards for social distance. The delivery colleague will leave your order at your doorstep and keep a 2-meter distance in order to comply to the contactless or no-contact delivery. Find out more about our efforts to guarantee the safety of our staff members, associates, delivery personnel, and transportation partners here.",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 4,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 5,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 6,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 7,
+            "timestamp": "3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 8,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 9,
+            "timestamp": " \n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 10,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 11,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 12,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 13,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 14,
+            "timestamp": "3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 15,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 16,
+            "timestamp": " \n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 17,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 18,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 19,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 20,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 21,
+            "timestamp": "3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 22,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 23,
+            "timestamp": " \n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 24,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 25,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 26,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        },
+        {
+            "mid": 27,
+            "timestamp": "\n3-3-2023 22:32:07",
+            "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
+            "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
+            "emotion": "others",
+            "sentiment": "NEU"
+        }
+    ]
+}

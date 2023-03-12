@@ -20,7 +20,7 @@ import useLoginStore from "../hooks/useLoginStore"
 
 
 
-export default function App({ loginStatus, setLoginStatus, user, setUser }) {
+function Navbar({ loginStatus, setLoginStatus, user, setUser }) {
 
 
     const navItemList = [["Home","/"],["Onboarding", "/onboarding"], ["Chat Analyzer", "/chatAnalyzer"], ["Practice", "/practice"], ["Manage Clients", "/manageClients"], ["Resources", "/resources"], ["Learn", "/learn"], ["Personal Analytics", "/personalAnalytics"]]
@@ -96,3 +96,5 @@ export default function App({ loginStatus, setLoginStatus, user, setUser }) {
 
     );
 }
+
+export default Navbar;
