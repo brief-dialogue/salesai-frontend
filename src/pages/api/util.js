@@ -1,3 +1,4 @@
+import {questionUrl, quizUrl} from "./urls"
 
 const getJsonFromUrl = async (url)=>{
     let res =  await fetch(url)
@@ -7,8 +8,7 @@ const getJsonFromUrl = async (url)=>{
     return res;
 }
 
-
-const getQuiz = async(quizId) => {
+export const getQuiz = async(quizId) => {
 
     const quizDetails = {
         "quizTitle": "",
@@ -16,9 +16,9 @@ const getQuiz = async(quizId) => {
         "questionsCount": 0,
         "quizId": 0
     }
-
-    let res = await getJsonFromUrl("http://localhost:1337/api/quizzes/1?populate=*");
-    if(res){
+    
+    let res = await getJsonFromUrl(quizUrl(quizId));
+    if(res.data){
         res = res.data;
         quizDetails.quizTitle = res.attributes.quizTitle;
         quizDetails.quizSynopsis = res.attributes.quizSynopsis;
@@ -29,15 +29,15 @@ const getQuiz = async(quizId) => {
     return {err:"Something went wrong"};
 }
 
+export const getQuestion = async (quizId, qusId) => {
 
-const getQuestion = async (qusId) => {
+    let res = await getJsonFromUrl(questionUrl(quizId));
 
-    let res = await getJsonFromUrl("http://localhost:1337/api/quizzes/1?populate=*&populate=questions.answers&populate=questions.questionPic");
-    if(res){
+    if(res.data != null){
         res = res.data.attributes.questions.data[qusId];
         return {...res.attributes, qid:res.id-1}
     }
     return {err: "something went wrong"};
 }
 
-module.exports = { getQuiz,  getQuestion }
+
