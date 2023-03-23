@@ -18,7 +18,8 @@ export default function Courses({ loginStatus, setLoginStatus, user, setUser }) 
   if (query.length == 0) {
 
     //if(allData){
-    response = useFetch("GET", "http://localhost:1337/api/courses", user['token']);
+    response = useFetch("GET", "http://localhost:1337/api/courses?&populate[thumbnail][fields][0]=url", user['token']);
+    console.log(response);
     // }
     // else{
     //   response= useFetch("GET","http://localhost:1337/api/courses?pagination[start]=0&pagination[limit]=4",user['token']);
