@@ -1,7 +1,7 @@
 import Question from "@/components/question";
 import { Router, useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { getQuestion, getQuiz } from "@/pages/api/util";
+import { getQuestion, getQuiz, getRandomColor } from "@/pages/api/util";
 import Loader from "@/components/loader";
 import Link from "next/link";
 
@@ -162,14 +162,4 @@ export default function Quiz(props) {
     </>)
 }
 
-function getRandomColor() {
-    // var letters = '0123456789ABCDEF';
-    // var color = '#';
-    // for (var i = 0; i < 6; i++) {
-    //     color += letters[Math.floor(Math.random() * 16)];
-    // }
-    // return color;
-    let colors = ['#000000', '#36454F', '#023020', '#301934', '#343434', '#1B1212', '#28282B', '#191970', '#353935']
-    return colors[Math.floor(Math.random() * colors.length)];
-}
 
