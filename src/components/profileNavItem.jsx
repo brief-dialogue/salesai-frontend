@@ -1,10 +1,12 @@
 import { MDBBtn, MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBIcon, MDBSpinner } from "mdb-react-ui-kit"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { toast } from "react-toastify"
 
 // profile Avatar at the end of navabr
 export default function ProfileNavItem({loginStatus,setLoginStatus,user,setUser}){
 
+
+    
 
     
     const [showLogoutSpinner, setShowLogoutSpinner] = useState(false);
