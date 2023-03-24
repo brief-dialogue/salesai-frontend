@@ -10,7 +10,7 @@
             "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
             "text": "What is no contact deilvery?",
             "emotion": "others",
-            "sentiment": "NEU",
+            "sentiment": "POS",
             "isQuestion": true,
             "question": " What is No-Contact delivery?",
             "expcted_ans": "Amazon is focused on the health and safety of our customers and employees. Based on regional regulations and social distancing requirements; there is a change to the way we’re delivering your items. To adhere to the contactless or no-contact delivery, the delivery associate will leave your order at your doorstep and maintain a 2-meter distance.Learn more about what we are doing to ensure the safety of our employees, associates, delivery and transportation partners here.",
@@ -31,7 +31,7 @@
             "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
             "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
             "emotion": "others",
-            "sentiment": "NEU"
+            "sentiment": "POS"
         },
         {
             "mid": 3,
@@ -47,7 +47,7 @@
             "sender_id": "3a94f155-0b21-4e87-b28f-a0d960be9218",
             "text": "saodbvkbwi,soahgfvon\"hfvl;m:ofdhvoiinaolpabhs:boasbblvfnpjrpo gog[q23rt638e7p903 `123456y7ui8op[\n1`w2e3r45ty6uy7i8o9pkahgsch owtguiyboehdpiun[lr][kp hr45623q\n4ieufgi",
             "emotion": "others",
-            "sentiment": "NEU"
+            "sentiment": "NEG"
         },
         {
             "mid": 5,
