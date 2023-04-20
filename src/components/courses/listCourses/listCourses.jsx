@@ -16,6 +16,7 @@ export default function ListCourses({ data, onClickReminder }) {
         <div className="row m-0">
           {data.map(item => (
             <CourseCard
+              key={item.id}
               backgroundImage={item.attributes.thumbnail.data.attributes.url == null ? "/Images/c1.jpg" : item.attributes.thumbnail.data.attributes.url}
               title={item.attributes.title}
               description={item.attributes.description}
@@ -23,11 +24,11 @@ export default function ListCourses({ data, onClickReminder }) {
               author={item.attributes.author} />
           ))}
         </div>
-        <div className={styles.button}>
+        {/* <div className={styles.button}>
           <button type="submit" className={styles.btn} onClick={onClickReminder}>
             View More
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
