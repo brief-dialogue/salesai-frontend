@@ -5,9 +5,11 @@ import ListOfChapter from '@/components/courses/listOfChapters/listOfChapter';
 import Home from '../../components/courses/home/home'
 import ListCourses from '../../components/courses/listCourses/listCourses'
 import useFetch from "../../hooks/usefetch";
-import { MDBSpinner } from "mdb-react-ui-kit";
+import { MDBRow, MDBSpinner } from "mdb-react-ui-kit";
 import { useState } from 'react';
 import { ListOfCourseFilterUrl, ListOfCourseUrl } from '../api/urls';
+import Loader from '@/components/loader';
+import { toast } from 'react-toastify';
 
 
 export default function Courses({ loginStatus, setLoginStatus, user, setUser }) {
@@ -35,8 +37,8 @@ export default function Courses({ loginStatus, setLoginStatus, user, setUser }) 
       <Home onSubmitHandler={(query) => setQuery(query)} />
       {
         response.isLoading ?
-          <MDBSpinner color='success' role='status' /> :
-          response.apiError ? <p className="mx-auto text-center">Erro</p> :
+          <span className='text-center mx-auto'><Loader/></span> :
+          response.apiError ? toast.error("Some error occured :("):
             response.apiData.length == 0 ? <p className="mx-auto text-center">No Data Found</p> :
               <ListCourses data={response.apiData} onClickReminder={() => { }} />
       }

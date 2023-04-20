@@ -31,9 +31,8 @@
   
   .para {
     font-size: 32px;
-    color: #fff;
+    color: #000000;
     /* color: #450159; */
-    margin: 0 0 10px;
     letter-spacing: 2px;
     /* text-shadow: 1px 1px 4px #fff; */
     text-transform: uppercase;
@@ -41,11 +40,11 @@
   
   .span {
     font-size: 24px;
-    color: #fff;
+    color: #000000;
     text-shadow: none;
   }
   
-  .input {
+  /* .input {
     width: 100%;
     padding: 10px;
     height: 35px;
@@ -53,10 +52,10 @@
     outline-offset: 0px;
     outline-width: 0;
     border-radius: 5px;
-  }
+  } */
 
   
-  .btn {
+  /* .btn {
     font-size: 20px;
     color: #450159;
     font-weight: 300;
@@ -75,4 +74,4 @@
     color: #fff;
     font-weight: 200;
     background-position: left bottom;
-  }
+  } */
