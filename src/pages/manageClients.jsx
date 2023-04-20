@@ -31,9 +31,10 @@ export default function ManageClients({ loginStatus, setLoginStatus, user, setUs
                                 url:`${BASE_STRAPI_URL}/clients?populate=*`,
                                 then: data => data.data.map((client,index)=>{
 
-                                    let photo_url = client.attributes.photo.data.attributes.url
+                                    console.log(client)
+                                    let photo_url = (client.attributes.photo.data)?(client.attributes.photo.data.attributes.url):"/avatar.svg";
                                     console.log(photo_url)
-                                    let photo_element = _(<Image src={`https://542d-2401-4900-5099-c44e-c114-cbdc-4bda-5fb5.in.ngrok.io${client.attributes.photo.data.attributes.url}`} alt='' width={45} height={45} className='rounded-circle' />)
+                                    let photo_element = _(<Image src={photo_url} alt='' width={45} height={45} className='rounded-circle' />)
                                     return [index,photo_element,client.attributes.name,client.attributes.email,client.attributes.contact,client.attributes.company,client.attributes.role,client.attributes.position,_(<MDBBtn key={`c${client.id}`}>Test</MDBBtn>),client.id]
                                 }),
                                 method:"GET",

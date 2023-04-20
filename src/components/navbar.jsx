@@ -23,7 +23,7 @@ import useLoginStore from "../hooks/useLoginStore"
 function Navbar({ loginStatus, setLoginStatus, user, setUser }) {
 
 
-    const navItemList = [["Home","/"],["Onboarding", "/onboarding"], ["Chat Analyzer", "/chatAnalyzer"], ["Practice", "/practice"], ["Manage Clients", "/manageClients"], ["Resources", "/resources"], ["Learn", "/learn"], ["Personal Analytics", "/personalAnalytics"]]
+    const navItemList = [["Home","/"],["Onboarding", "/courses"], ["Chat Analyzer", "/chatAnalyzer"], ["Practice", "/practice"], ["Manage Clients", "/manageClients"], ["Resources", "/resources"], ["Learn", "/courses"], ["Personal Analytics", "/personalAnalytics"]]
     const [showNav, setShowNav] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [showLogoutSpinner, setShowLogoutSpinner] = useState(false);
@@ -59,7 +59,7 @@ function Navbar({ loginStatus, setLoginStatus, user, setUser }) {
                             {navItemList.map((item) =>
 
                                 (<MDBNavbarItem key={item[1]}>
-                                    <Link href={item[1]} className='nav-link'>{item[0]}</Link>
+                                    <Link href={item[1]} className='nav-link fs-6'>{item[0]}</Link>
                                 </MDBNavbarItem>)
                             )}
                             {/* <MDBNavbarItem>
@@ -79,9 +79,13 @@ function Navbar({ loginStatus, setLoginStatus, user, setUser }) {
                         </MDBNavbarNav>
                         <MDBNavbarNav right fullWidth={false}>
                             <MDBNavbarItem>
+                                <MDBBtn outline rounded color="success" className='me-4' href="http://localhost:1337/admin/" target="_blank">Admin</MDBBtn>   
+                            </MDBNavbarItem>
+                            <MDBNavbarItem>
                                 {(user["isLogIn"]) ? (<ProfileNavItem loginStatus={loginStatus} setLoginStatus={setLoginStatus} user={user} setUser={setUser} />) : (<MDBBtn onClick={toggleModal}>Login</MDBBtn>)}
 
                             </MDBNavbarItem>
+
                         </MDBNavbarNav>
                     </MDBCollapse>
 

@@ -30,7 +30,7 @@ function Banner() {
       </MDBCol>
       <MDBCol className='text-center'>
 
-        <Image src="/banner_art.svg" alt='background_art' width={350} height={350} />
+        <Image src="/banner_art.svg" alt='background_art' width={450} height={450} />
 
       </MDBCol>
     </MDBRow>
