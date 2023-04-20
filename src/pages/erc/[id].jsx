@@ -9,14 +9,14 @@ function QALayout(props) {
     const [result, setResult] = useState({ "isAnalyzied": false });
     const [answer, setAnswer] = useState("");
     const checkAnswer = () => {
-        getAnalysis(props.answer, answer).then(res => setResult({...res, "isAnalyzied": true}));
+        getAnalysis(props.answer, answer).then(res => setResult({ ...res, "isAnalyzied": true }));
     }
     return (
         <>
             {
                 result.isAnalyzied ?
                     <div>
-                        Your answer matched: {(result.score * 100).toPrecision(2)}%
+                        Your answer matched: {(result['score'] * 100).toPrecision(2)}%
                     </div>
                     :
                     <>
@@ -58,7 +58,6 @@ export default function ERC(props) {
         backgroundColor: getRandomColor(),
         width: "100%",
         height: "100%",
-        position: "fixed",
         top: "0px",
         left: '0px',
         zIndex: "1000",
