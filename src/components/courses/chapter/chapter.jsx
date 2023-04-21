@@ -1,5 +1,5 @@
 
-import styles from "./Chapter.module.css";
+import styles from "./chapter.module.css";
 import useFetch from "@/hooks/usefetch";
 import { MDBSpinner } from "mdb-react-ui-kit";
 import { useState } from "react";

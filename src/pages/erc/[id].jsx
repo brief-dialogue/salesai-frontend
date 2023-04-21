@@ -16,7 +16,7 @@ function QALayout(props) {
             {
                 result.isAnalyzied ?
                     <div>
-                        Your answer matched: {(result.score * 100).toPrecision(2)}%
+                        Your answer matched: {(result["score"] * 100).toPrecision(2)}%
                     </div>
                     :
                     <>
@@ -58,7 +58,6 @@ export default function ERC(props) {
         backgroundColor: getRandomColor(),
         width: "100%",
         height: "100%",
-        position: "fixed",
         top: "0px",
         left: '0px',
         zIndex: "1000",
@@ -68,7 +67,7 @@ export default function ERC(props) {
     };
 
     return (
-        <div style={LayoutStyle} className="d-flex flex-column">
+        <div style={LayoutStyle} className="position-fixed d-flex flex-column">
             <div className="d-flex justify-content-between flex-row" style={{ backgroundColor: "black", padding: "10px" }}>
                 <Link href="/" style={{ color: "white", textDecoration: "underline" }}>Home</Link>
                 {questionDetails ? "Subjective Question" : "loading..."}
