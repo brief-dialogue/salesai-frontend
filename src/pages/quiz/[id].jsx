@@ -136,14 +136,14 @@ export default function Quiz(props) {
     const goBack = () => router.back();
 
     return (<>
-        <div style={LayoutStyle} className="d-flex flex-column">
+        <div style={LayoutStyle} className="position-fixed d-flex flex-column">
             <div className="d-flex justify-content-between flex-row" style={{ backgroundColor: "black", padding: "10px" }}>
                 <Link href="/" style={{ color: "white", textDecoration: "underline" }}>Home</Link>
-                {quizDetails['quizTitle'] ? quizDetails['quizTitle'] : "loading..."}
+                {quizDetails["quizTitle"] ? quizDetails["quizTitle"] : "loading..."}
 
                 <span>
-                    {qusDetails.qid < quizDetails['questionsCount'] ?
-                        <>{(qusDetails.qid + 1)}  /  {quizDetails['questionsCount']} </>
+                    {qusDetails.qid < quizDetails["questionsCount"] ?
+                        <>{(qusDetails.qid + 1)}  /  {quizDetails["questionsCount"]} </>
                         : "0 / 0"
                     }
 
@@ -152,13 +152,10 @@ export default function Quiz(props) {
             </div>
             <div className="d-flex justify-content-around align-items-center flex-fill p-5">
                 {
-<<<<<<< Updated upstream
-                    quizDetails['quizTitle'] ?
-                        <QALayout {...quizDetails} quizSynopsis={qusDetails['quizSynopsis']} quizId={qusDetails['quizId']} questionsCount={qusDetails['questionsCount']} quizTitle={qusDetails['quizTitle']} qusDetails={qusDetails} setQusDetails={setQusDetails} goBack={goBack} />
-=======
+
                     quizDetails["quizTitle"] ?
                         <QALayout quizTitle={quizDetails["quizTitle"]} quizSynopsis={quizDetails["quizSynopsis"]} questionsCount={quizDetails["questionsCount"]} quizId={quizDetails["quizId"]} qusDetails={qusDetails} setQusDetails={setQusDetails} goBack={goBack} />
->>>>>>> Stashed changes
+
                         : <Loader />
                 }
             </div>
