@@ -9,7 +9,7 @@ function QALayout(props) {
     const [result, setResult] = useState({ "isAnalyzied": false });
     const [answer, setAnswer] = useState("");
     const checkAnswer = () => {
-        getAnalysis(props.answer, answer).then(res => setResult({...res, "isAnalyzied": true}));
+        getAnalysis(props.answer, answer).then(res => setResult({ ...res, "isAnalyzied": true }));
     }
     return (
         <>

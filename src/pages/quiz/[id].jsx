@@ -88,7 +88,7 @@ function QALayout({ quizTitle, quizSynopsis, questionsCount, quizId, qusDetails,
                                 </>)
                             case questionsCount:
                                 return (<>
-                                    <EndCard correctCount={ansDetails.correctCount} goBack={goBack}/>
+                                    <EndCard correctCount={ansDetails.correctCount} goBack={goBack} />
                                 </>)
                             default:
                                 return (
@@ -133,7 +133,7 @@ export default function Quiz(props) {
         setQuizDetails(() => getQuiz(quizId).then(res => setQuizDetails(res)));
     }, [quizId])
 
-    const goBack=()=>router.back();
+    const goBack = () => router.back();
 
     return (<>
         <div style={LayoutStyle} className="position-fixed d-flex flex-column">
@@ -152,8 +152,10 @@ export default function Quiz(props) {
             </div>
             <div className="d-flex justify-content-around align-items-center flex-fill p-5">
                 {
+
                     quizDetails["quizTitle"] ?
-                        <QALayout quizTitle={quizDetails["quizTitle"]} quizSynopsis={quizDetails["quizSynopsis"]} questionsCount={quizDetails["quizSynopsis"]} quizId={quizDetails["quizId"]} qusDetails={qusDetails} setQusDetails={setQusDetails} goBack={goBack}/>
+                        <QALayout quizTitle={quizDetails["quizTitle"]} quizSynopsis={quizDetails["quizSynopsis"]} questionsCount={quizDetails["questionsCount"]} quizId={quizDetails["quizId"]} qusDetails={qusDetails} setQusDetails={setQusDetails} goBack={goBack} />
+
                         : <Loader />
                 }
             </div>
