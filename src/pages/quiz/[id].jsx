@@ -152,8 +152,13 @@ export default function Quiz(props) {
             </div>
             <div className="d-flex justify-content-around align-items-center flex-fill p-5">
                 {
+<<<<<<< Updated upstream
                     quizDetails['quizTitle'] ?
                         <QALayout {...quizDetails} quizSynopsis={qusDetails['quizSynopsis']} quizId={qusDetails['quizId']} questionsCount={qusDetails['questionsCount']} quizTitle={qusDetails['quizTitle']} qusDetails={qusDetails} setQusDetails={setQusDetails} goBack={goBack} />
+=======
+                    quizDetails["quizTitle"] ?
+                        <QALayout quizTitle={quizDetails["quizTitle"]} quizSynopsis={quizDetails["quizSynopsis"]} questionsCount={quizDetails["questionsCount"]} quizId={quizDetails["quizId"]} qusDetails={qusDetails} setQusDetails={setQusDetails} goBack={goBack} />
+>>>>>>> Stashed changes
                         : <Loader />
                 }
             </div>
